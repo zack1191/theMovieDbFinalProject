@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".activities.UpcomingActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout
+                android:id="@+id/fl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_blur_image_upcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:alpha="0.5"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/manga_image" />
+
+                <eightbitlab.com.blurview.BlurView
+                    android:id="@+id/blurLayoutUpcome"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_close_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_medium"
+                    android:padding="@dimen/margin_small"
+                    android:src="@drawable/ic_close_white_24dp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_manga_upc"
+                    android:layout_width="130dp"
+                    android:layout_height="180dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/manga_image" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small">
+
+                <TextView
+                    android:id="@+id/tv_Tile_upc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="Title"
+                    android:textColor="@color/colorRed"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_popular_upcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Tile_upc"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="Poularity : "
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvPopularityUpCome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Tile_upc"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_toEndOf="@id/tv_popular_upcome"
+                    android:textColor="@android:color/white"
+                    tools:text="90 mins" />
+
+                <TextView
+                    android:id="@+id/tv_vote_upcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvPopularityUpCome"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="Rating : "
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvVoteUpCome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_popular_upcome"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_toEndOf="@id/tv_vote_upcome"
+                    android:textColor="@android:color/white"
+                    tools:text="Thriller" />
+
+                <TextView
+                    android:id="@+id/tv_Date_upc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvVoteUpCome"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="Released Date : "
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_release_date_upc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvVoteUpCome"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_toEndOf="@id/tv_Date_upc"
+                    android:text="Release Date"
+                    android:textColor="#51ff0d"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvOverView_upc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Date_upc"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="Overview"
+                    android:textColor="@color/colorRed"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDesc_upc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvOverView_upc"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="OverView"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

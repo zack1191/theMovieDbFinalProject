@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/tv_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Reviews"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textColor="@color/colorRed" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_review" />
+
+
+</RelativeLayout>
